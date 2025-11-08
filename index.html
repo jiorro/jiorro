@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 🎨 Color Picker -->
   <input type="color" id="colorPicker" value="#8000ff" />
   <div id="custom-cursor"></div>
 
-  <!-- 🔊 Effetti sonori -->
+  <!-- 🔊 Effetto click -->
   <audio id="clickSound" src="sounds/click.mp3"></audio>
 
   <!-- 🎵 Jiorro Soundpack -->
@@ -19,11 +20,19 @@
   <audio id="track2" src="sounds/track2.mp3" loop></audio>
   <audio id="track3" src="sounds/track3.mp3" loop></audio>
 
+  <!-- 🎚️ Controlli audio -->
+  <div id="audio-controls">
+    <button id="muteBtn">🔇 Muto</button>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.3" />
+  </div>
+
+  <!-- 🏁 Hero -->
   <header class="hero">
     <h1>Jiorro</h1>
     <p>Benvenuti nel sito piccoli stroll</p>
   </header>
 
+  <!-- 🧩 Sezioni -->
   <section class="section reveal">
     <h2>Esplora</h2>
     <div class="button-group">
