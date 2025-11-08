@@ -12,9 +12,15 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
-// Toggle info boxes
+// Toggle info boxes + sound
 function toggleInfo(id) {
   const allBoxes = document.querySelectorAll('.info-box');
+  const sound = document.getElementById('clickSound');
+  if (sound) {
+    sound.currentTime = 0;
+    sound.play();
+  }
+
   allBoxes.forEach(box => {
     box.style.display = box.id === id
       ? (box.style.display === 'block' ? 'none' : 'block')
