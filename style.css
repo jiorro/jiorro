@@ -92,3 +92,12 @@ button:hover {
   border-left: 4px solid #ffcc00;
   display: none;
 }
+
+.bananaleclerc {
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
